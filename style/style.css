@@ -7,4 +7,110 @@ body {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.header__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 26px;
+  margin-left: 111px;
+  margin-right: 105px;
+  margin-bottom: 106px;
+  justify-content: space-between;
+}
+.header__nav {
+  width: 431px;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.header__list-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.header__btn {
+  width: 118px;
+  height: 48px;
+  background-color: #1e252b;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fdf5ff;
+  border: 0;
+  transition: all 0.1s ease-in;
+}
+.header__btn:hover {
+  cursor: pointer;
+  background-color: #ff6e30;
+  border-radius: 8px;
+}
+.header__main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 110px;
+  margin-left: 111px;
+}
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.header__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.9);
+  width: 600px;
+  margin-bottom: 30px;
+}
+.header__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: rgba(255, 255, 255, 0.55);
+  width: 487px;
+  margin-bottom: 60px;
+}
+.header__search {
+  border-radius: 15px;
+  width: 497px;
+  background-color: #283036;
+}
+.header__input {
+  width: 320px;
+  margin: 20px 0 20px 20px;
+  background-color: #283036;
+  border: 0;
+  color: #fff;
+  outline: none;
+}
+.header__btn-search {
+  width: 130px;
+  height: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff6e30;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 0;
+  margin: 8px 11px 0 8px;
+}
+.header__links {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.header__links > a {
+  padding: 12px;
 }/*# sourceMappingURL=style.css.map */

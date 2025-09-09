@@ -1,5 +1,128 @@
-.header{
-    background-image: url(../img/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.header {
+  background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 26px;
+    margin-left: 111px;
+    margin-right: 105px;
+    margin-bottom: 106px;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    width: 431px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.55);
+
+    &-item:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    width: 118px;
+    height: 48px;
+    background-color: #1e252b;
+    font-family: $first-family;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fdf5ff;
+    border: 0;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #ff6e30;
+      border-radius: 8px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 110px;
+    margin-left: 111px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__title {
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.9);
+    width: 600px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-family: $first-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 167%;
+    color: rgba(255, 255, 255, 0.55);
+    width: 487px;
+    margin-bottom: 60px;
+  }
+
+  &__search {
+    border-radius: 15px;
+    width: 497px;
+    background-color: #283036;
+  }
+
+  &__input{
+    width: 320px;
+    margin:20px 0 20px 20px;
+    background-color: #283036;
+    border: 0;
+    color: #fff;
+   outline: none;
+  }
+  &__btn-search {
+    width: 130px;
+    height: 48px;
+    font-family: $first-family;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff6e30;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 0;
+
+    margin: 8px 11px 0 8px;
+  }
+
+
+  &__links{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  
+    &>a{
+        padding: 12px;
+    }
+}
+
+  
 }
