@@ -113,4 +113,104 @@ body {
 }
 .header__links > a {
   padding: 12px;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  row-gap: 90px;
+  align-items: center;
+  padding: 200px 108px;
+}
+.tools__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+.tools__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.55);
+}
+.tools__list {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 100px;
+  flex-wrap: wrap;
+  width: 1230px;
+}
+.tools__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: rgba(255, 255, 255, 0.55);
+}
+.tools__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: start;
+  color: #fff;
+  padding: 33px;
+  padding-bottom: 0;
+  background: #1e252b;
+  border-radius: 15px;
+  transition: all 0.1s ease-in;
+}
+.tools__item:hover {
+  border-radius: 15px;
+  width: 392px;
+  height: 294px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgba(40, 48, 54, 0.6);
+}
+.tools__item-top {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: start;
+}
+.tools__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  align-items: flex-start;
+}
+.tools__item-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.78);
+}
+.tools__item-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 165, 55, 0.55);
+}
+.tools__icons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 124px;
+       column-gap: 124px;
+}
+.tools__btn {
+  width: 106px;
+  height: 42px;
+  outline: none;
+  border: 0;
+  background: #1e252b;
+  color: #fff;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

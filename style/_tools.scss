@@ -1,0 +1,108 @@
+.tools {
+  display: flex;
+  flex-direction: column;
+  row-gap: 90px;
+  align-items: center;
+
+  padding: 200px 108px;
+  &__title {
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__subtitle {
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    row-gap: 100px;
+    flex-wrap: wrap;
+    width: 1230px;
+  }
+
+  &__text {
+    font-family: $first-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: rgba(255, 255, 255, 0.55);
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: start;
+    color: #fff;
+    padding: 33px;
+    padding-bottom: 0;
+    background: #1e252b;
+    border-radius: 15px;
+    
+    
+    transition: all 0.1s ease-in;
+
+    &:hover {
+      border-radius: 15px;
+      width: 392px;
+      height: 294px;
+      backdrop-filter: blur(50px);
+      background: rgba(40, 48, 54, 0.6);
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+      align-items: start;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3px;
+      align-items: flex-start;
+    }
+
+    &-title {
+      font-family: $first-family;
+      font-weight: 500;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    &-subtitle {
+      font-family: $first-family;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(255, 165, 55, 0.55);
+    }
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 124px;
+  }
+
+  &__btn {
+    width: 106px;
+    height: 42px;
+    outline: none;
+    border: 0;
+    background: #1e252b;
+    color: #fff;
+    cursor: pointer;
+  }
+}
