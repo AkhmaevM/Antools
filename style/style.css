@@ -145,7 +145,8 @@ body {
        column-gap: 25px;
   row-gap: 100px;
   flex-wrap: wrap;
-  width: 1230px;
+  justify-content: space-around;
+  width: 1244px;
 }
 .tools__text {
   font-family: "Poppins", sans-serif;
@@ -153,6 +154,7 @@ body {
   font-size: 16px;
   line-height: 187%;
   color: rgba(255, 255, 255, 0.55);
+  width: 326px;
 }
 .tools__item {
   display: flex;
@@ -161,18 +163,16 @@ body {
   align-items: start;
   color: #fff;
   padding: 33px;
-  padding-bottom: 0;
   background: #1e252b;
   border-radius: 15px;
-  transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in-out;
 }
 .tools__item:hover {
-  border-radius: 15px;
-  width: 392px;
-  height: 294px;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-  background: rgba(40, 48, 54, 0.6);
+  background: url("../img/item-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .tools__item-top {
   display: flex;
@@ -213,4 +213,54 @@ body {
   background: #1e252b;
   color: #fff;
   cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.1s ease-in;
+}
+.tools__btn:hover {
+  background-color: #ff6e30;
+}
+.tools__bottom-btn {
+  width: 184px;
+  height: 64px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ff6e30;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: #1e252b;
+  transition: all 0.1s ease-in;
+}
+.tools__bottom-btn:hover {
+  cursor: pointer;
+  background-color: #ff6e30;
+  color: #FFF;
+}
+
+.brands {
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgba(44, 53, 61, 0.2);
+  display: flex;
+  flex-direction: column;
+  row-gap: 55px;
+  margin: 200px 108px;
+  align-items: center;
+}
+.brands__title {
+  padding-top: 55px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.brands__list {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 107px;
+       column-gap: 107px;
+  padding-bottom: 56px;
+  padding-left: 83px;
+  padding-right: 93px;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
