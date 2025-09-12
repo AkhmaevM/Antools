@@ -1,7 +1,9 @@
 .newtools {
   display: flex;
   flex-direction: row;
+
   column-gap: 197px;
+  justify-content: space-evenly;
   margin: 200px 108px;
 
   &__info {
@@ -39,5 +41,84 @@
     color: #fff;
     border: 0;
     cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px 24px ;
+    width: 601px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 28px 21px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      background-image: url(../img/newtool-item-bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    &-top {
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+      align-items: center;
+    }
+
+    &-title {
+      font-family: $first-family;
+      font-weight: 500;
+      font-size: 24px;
+      color: rgba(255, 255, 255, 0.78);
+      margin-bottom: 3px;
+    }
+
+    &-subtitle {
+      font-family: $first-family;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(255, 165, 55, 0.55);
+    }
+
+    &-btn {
+      width: 106px;
+      height: 42px;
+      font-family: $first-family;
+      font-weight: 600;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.55);
+      background: #1e252b;
+      border-radius: 8px;
+      border: 0;
+
+      &:hover {
+        background-color: $main-orange;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $first-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: rgba(255, 255, 255, 0.55);
+    width: 245px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 43px;
   }
 }
