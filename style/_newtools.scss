@@ -1,0 +1,43 @@
+.newtools {
+  display: flex;
+  flex-direction: row;
+  column-gap: 197px;
+  margin: 200px 108px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  &__title {
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__subtitle {
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 167%;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 60px;
+    width: 427px;
+  }
+
+  &__btn {
+    width: 198px;
+    height: 58px;
+    border-radius: 8px;
+    background-color: $main-orange;
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+  }
+}
