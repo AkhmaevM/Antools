@@ -163,6 +163,7 @@ body {
   align-items: start;
   color: #fff;
   padding: 33px;
+  border: 0;
   background: #1e252b;
   border-radius: 15px;
   transition: all 0.1s ease-in-out;
@@ -243,6 +244,7 @@ body {
   background-size: cover;
   border-radius: 15px;
   margin: 200px 108px;
+  border: 0px;
 }
 .brands__wrapper {
   display: flex;
@@ -377,4 +379,80 @@ body {
   flex-direction: row;
   -moz-column-gap: 43px;
        column-gap: 43px;
+}
+
+.developers {
+  margin-left: 295px;
+  margin-right: 295px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  position: relative;
+}
+.developers__list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 20ch;
+  -moz-column-gap: 254px;
+       column-gap: 254px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  anchor-name: --item;
+}
+.developers__list::scroll-button(*) {
+  position: fixed;
+  position-anchor: --item;
+}
+.developers__list::scroll-button(right) {
+  position-area: inline-end center;
+  content: url("../img/svg/chevron-right.svg");
+  background-color: #1e252b;
+  border: none;
+  margin-left: 100px;
+}
+.developers__list::scroll-button(right):hover {
+  content: url("../img/svg/chevron-right-orange.svg");
+  cursor: pointer;
+}
+.developers__list::scroll-button(left) {
+  position-area: inline-start center;
+  content: url("../img/svg/chevron-left.svg");
+  background-color: #1e252b;
+  border: none;
+  margin-right: 25px;
+}
+.developers__list::scroll-button(left):hover {
+  content: url("../img/svg/chevron-left-orange.svg");
+  cursor: pointer;
+}
+.developers__item {
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 187px;
+}
+.developers__item-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.78);
+  width: 393px;
+  background-image: url("../img/svg/quote.svg");
+  background-repeat: no-repeat;
+  padding-top: 110px;
+  padding-left: 110px;
+  padding-bottom: 137px;
+  padding-right: 0;
+  margin-right: 0;
+}
+.developers__item-img {
+  width: 399px;
+  height: 492px;
 }/*# sourceMappingURL=style.css.map */

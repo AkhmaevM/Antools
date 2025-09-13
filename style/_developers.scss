@@ -1,0 +1,89 @@
+.developers {
+  margin-left: 295px;
+  margin-right: 295px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+  position: relative;
+
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20ch;
+    column-gap: 254px;
+
+    // slider
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    anchor-name: --item;
+
+    &::scroll-button(*) {
+      position: fixed;
+      position-anchor: --item;
+    }
+
+    &::scroll-button(right) {
+      position-area: inline-end center;
+      content: url("../img/svg/chevron-right.svg");
+      background-color: #1e252b;
+      border: none;
+      margin-left: 100px;
+      &:hover {
+        content: url("../img/svg/chevron-right-orange.svg");
+        cursor: pointer;
+      }
+    }
+
+    &::scroll-button(left) {
+      position-area: inline-start center;
+      content: url("../img/svg/chevron-left.svg");
+      background-color: #1e252b;
+     
+      border: none;
+      margin-right: 25px;
+
+       &:hover {
+        content: url("../img/svg/chevron-left-orange.svg");
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__item {
+    scroll-snap-align: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 187px;
+
+    &-text {
+      font-family: $third-family;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 214%;
+      letter-spacing: 0.01em;
+      color: rgba(255, 255, 255, 0.78);
+
+      width: 393px;
+
+      background-image: url("../img/svg/quote.svg");
+      background-repeat: no-repeat;
+      padding-top: 110px;
+      padding-left: 110px;
+      padding-bottom: 137px;
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+    &-img {
+      width: 399px;
+      height: 492px;
+    }
+  }
+}
