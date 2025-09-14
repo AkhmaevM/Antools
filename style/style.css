@@ -455,4 +455,65 @@ body {
 .developers__item-img {
   width: 399px;
   height: 492px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-top: 250px;
+  margin-bottom: 240px;
+  align-items: center;
+  width: 553px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+.form__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 75px;
+  width: 427px;
+}
+.form__bottom {
+  width: 549px;
+  height: 48px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #283036;
+  padding: 8px 12px;
+}
+.form__input {
+  background-color: #283036;
+  width: 382px;
+  border-radius: 15px;
+  outline: 0;
+  border: 0;
+  color: #fff;
+}
+.form__btn {
+  width: 130px;
+  height: 48px;
+  color: #fff;
+  background-color: #ff6e30;
+  border-radius: 8px;
+  border: 0;
+  padding: 12px 35px;
+}
+.form__btn:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
