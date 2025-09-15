@@ -1,0 +1,79 @@
+.footer {
+  padding: 70px 233px 108px 98px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+
+  &__copyrights {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  &__logo {
+    width: 140px;
+    height: 38px;
+  }
+
+  &__rights {
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  &__text {
+    font-family: $first-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 179%;
+    color: rgba(255, 255, 255, 0.55);
+    width: 260px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 115px;
+    width: 683px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__title {
+    font-family: $first-family;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+
+    &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    
+
+    &-item {
+      font-family: $first-family;
+      font-weight: 500;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.55);
+
+      &:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}

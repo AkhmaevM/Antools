@@ -19,6 +19,8 @@
     scroll-snap-type: x mandatory;
     anchor-name: --item;
 
+  
+
     &::scroll-button(*) {
       position: fixed;
       position-anchor: --item;
@@ -40,15 +42,18 @@
       position-area: inline-start center;
       content: url("../img/svg/chevron-left.svg");
       background-color: #1e252b;
-     
+
       border: none;
       margin-right: 25px;
 
-       &:hover {
+      &:hover {
         content: url("../img/svg/chevron-left-orange.svg");
         cursor: pointer;
-      }
-    }
+      };
+    };
+
+    
+    
   }
 
   &__item {
@@ -61,6 +66,8 @@
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 187px;
+
+    
 
     &-text {
       font-family: $third-family;
@@ -87,3 +94,4 @@
     }
   }
 }
+
